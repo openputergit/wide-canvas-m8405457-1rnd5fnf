@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Footprints in Disaster: AI Failures and Data Loss</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        .infographic-container {
+            max-width: 2190px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+            padding: 2rem;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: #dc2626;
+            border-radius: 50%;
+        }
+        .timeline-line {
+            width: 2px;
+            background: #dc2626;
+        }
+        .intro-bg {
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9bf5e31d643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-4.0.3&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            border-radius: 16px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="infographic-container p-8">
+        <!-- Introduction Section -->
+        <header class="intro-bg mb-8 p-8 rounded-xl text-center">
+            <h1 class="text-5xl md:text-6xl font-bold">Digital Footprints in Disaster</h1>
+            <h2 class="text-3xl font-light">AI Failures and Data Loss</h2>
+            <p class="mt-4">Exploring the impact of technology on disaster management.</p>
+        </header>
+
+        <!-- What are Digital Footprints -->
+        <section class="section mb-16 bg-gray-50 rounded-xl shadow-lg">
+            <h2 class="text-4xl font-bold mb-8">What are Digital Footprints?</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-full md:w-1/2">
+                    <div class="flow-chart space-y-4">
+                        <div class="bg-blue-100 p-4 rounded-lg text-center">Device Data</div>
+                        <i class="bi bi-arrow-down text-2xl text-blue-500"></i>
+                        <div class="bg-blue-200 p-4 rounded-lg text-center">Internet Transfer</div>
+                        <i class="bi bi-arrow-down text-2xl text-blue-500"></i>
+                        <div class="bg-blue-300 p-4 rounded-lg text-center">Cloud Storage</div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <p class="text-lg text-gray-700">Digital footprints represent our online presence and data trail. In disaster scenarios, these become crucial for:</p>
+                    <ul class="list-disc ml-6 mt-4 space-y-2">
+                        <li>Personal identification</li>
+                        <li>Document recovery</li>
+                        <li>Emergency contact information</li>
+                        <li>Insurance claims</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Failures Timeline -->
+        <section class="section mb-16">
+            <h2 class="text-4xl font-bold mb-8">AI Failures in California Wildfires</h2>
+            <div class="relative">
+                <div class="timeline-events space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-red-50 p-6 rounded-lg flex-1">
+                            <h3 class="font-bold text-xl">Early Warning System Failure</h3>
+                            <p>AI-powered cameras failed to detect initial fire signs in Palisades.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-red-50 p-6 rounded-lg flex-1">
+                            <h3 class="font-bold text-xl">Emergency Response Delay</h3>
+                            <p>Algorithmic limitations led to delayed emergency responses.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-red-50 p-6 rounded-lg flex-1">
+                            <h3 class="font-bold text-xl">Data Loss Impact</h3>
+                            <p>Widespread loss of digital records and personal data occurred.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Loss Impact -->
+        <section class="section mb-16">
+            <h2 class="text-4xl font-bold mb-8">The Reality of Data Loss</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-xl text-white">
+                    <h3 class="text-xl font-bold mb-4">Before Disaster</h3>
+                    <ul class="space-y-2">
+                        <li><i class="bi bi-check-circle"></i> Accessible cloud storage</li>
+                        <li><i class="bi bi-check-circle"></i> Organized digital documents</li>
+                        <li><i class="bi bi-check-circle"></i> Family photos and memories</li>
+                        <li><i class="bi bi-check-circle"></i> Important records</li>
+                    </ul>
+                </div>
+                <div class="bg-red-600 p-8 rounded-xl text-white">
+                    <h3 class="text-xl font-bold mb-4">After Disaster</h3>
+                    <ul class="space-y-2">
+                        <li><i class="bi bi-x-circle"></i> Lost access credentials</li>
+                        <li><i class="bi bi-x-circle"></i> Corrupted backup data</li>
+                        <li><i class="bi bi-x-circle"></i> Destroyed physical copies</li>
+                        <li><i class="bi bi-x-circle"></i> Recovery complications</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Impact -->
+        <section class="section mb-16">
+            <h2 class="text-4xl font-bold mb-8">Personal Impact: My Story</h2>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1533126754471-0e74b5caae4c" alt="Symbolic burnt documents" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl font-bold mb-4">February 26th, 2024 Incident</h3>
+                        <ul class="space-y-4">
+                            <li><i class="bi bi-exclamation-triangle text-red-500"></i> Fire detection system failure</li>
+                            <li><i class="bi bi-folder-x text-red-500"></i> Loss of personal documents</li>
+                            <li><i class="bi bi-image-alt text-red-500"></i> Lost family photographs</li>
+                            <li><i class="bi bi-shield-x text-red-500"></i> Compromised digital security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section text-center mb-16">
+            <h2 class="text-4xl font-bold mb-8">Moving Forward: Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <i class="bi bi-cloud-check text-4xl text-blue-500"></i>
+                    <h3 class="text-xl font-bold my-4">Improved Backup Systems</h3>
+                    <p>Regular automated backups with redundancy.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <i class="bi bi-robot text-4xl text-green-500"></i>
+                    <h3 class="text-xl font-bold my-4">Enhanced AI Training</h3>
+                    <p>Better disaster detection algorithms.</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <i class="bi bi-shield-check text-4xl text-purple-500"></i>
+                    <h3 class="text-xl font-bold my-4">Disaster Recovery Plans</h3>
+                    <p>Comprehensive recovery protocols.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citations -->
+        <footer class="mt-16 text-sm text-gray-600">
+            <h3 class="text-lg font-bold mb-4">Sources:</h3>
+            <ul class="space-y-2">
+                <li>AI Secret (2025). California Wildfires - AI Failures in Disaster Management</li>
+                <li>USWired (2024). The Importance of a Comprehensive Data Backup and Disaster Recovery Plan</li>
+                <li>Syracuse.com (2025). The Failure of Automated Inspections: A Safety Risk at Syracuse Schools</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
